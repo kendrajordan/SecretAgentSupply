@@ -1,0 +1,162 @@
+*{
+  font-family:"Helvetica",sans-serif;
+  margin: 0;
+  padding:0;
+}
+html{
+  font-size: 18px;
+
+}
+body{
+
+}
+/*header*/
+header{
+  display: flex;
+  justify-content: center;
+width: 100%;
+background-color: black;
+color:white;
+}
+.width{
+  width:960px;
+}
+header .width{
+  display:flex;
+}
+.logo{
+  height:1.5rem;
+  margin:auto 1rem auto 0.5rem;
+}
+.company{
+  font-size: 1rem;
+  margin:0.66rem;
+}
+/*Main Banner*/
+.MainBanner-container{
+  display: flex;
+  justify-content: center;
+  height:25rem;
+  width:100%;
+  background-image: url(../images/moto.jpeg);
+  background-size: cover;
+}
+/*New Arrival box*/
+.box{
+  margin-top: 9rem;
+  display block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 20rem;
+  color:white;
+  background-color: black;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-left:3rem;
+  padding-bottom:2rem;
+  padding-right: 2rem;
+  align-self: flex-start;
+  justify-content: center;
+}
+.box h3{
+  margin-bottom:.25rem;
+  font-size: 1rem;
+  font-weight:bold;
+}
+.box h1{
+  font-size:2rem;
+  font-weight:bold;
+}
+/*navagation*/
+nav{
+display: flex;
+justify-content: center;
+background-color: firebrick;
+padding:0.75rem 0;
+}
+nav .width ul{
+    width: 100%;
+  background-color: firebrick;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+display: flex;
+justify-content: space-between;
+}
+nav ul li{
+display: inline-block;
+}
+/*product grid*/
+.product-grid{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.product-grid .width{
+  display: flex;
+  justify-content: space-between;
+}
+/*gadgets*/
+.gadget{
+  display: block;
+  display: flex;
+  flex-direction: column;
+  width:30%;
+  border:4px solid black;
+  margin-top: 3rem;
+}
+.gadget img{
+  height: 9rem;
+  padding: 2rem;
+}
+.gadget h4{
+  display: inline-block;
+  padding-top:0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  color:white;
+  background-color: black;
+  width: 100%;
+}
+/*location and hours*/
+.contact-container{
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+.contact-container .width{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact{
+  display: block;
+  display:flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-top:3rem;
+  margin-bottom: 4rem;
+  width:35%;
+}
+.contact h4{
+  display: inline-block;
+  background-color:black;
+  color:white;
+  padding-left:2rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+/*footer*/
+footer{
+height:5rem;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color:white;
+}
+footer .width{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
