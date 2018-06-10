@@ -55,7 +55,6 @@ header .width{
   padding-top: 2rem;
   padding-left:3rem;
   padding-bottom:2rem;
-  padding-right: 2rem;
   align-self: flex-start;
   justify-content: center;
 }
@@ -70,19 +69,24 @@ header .width{
 }
 /*navagation*/
 nav{
-display: flex;
-justify-content: center;
-background-color: firebrick;
-padding:0.75rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: firebrick;
+  padding:0.75rem 0;
 }
-nav .width ul{
-    width: 100%;
+nav .width .menu ul,nav .width .categories ul {
+  width: 100%;
   background-color: firebrick;
   color: white;
   font-weight: bold;
   font-size: 1rem;
-display: flex;
-justify-content: space-between;
+  display: flex;
+}
+nav .width .categories ul{
+  justify-content: space-between;
+}
+nav .width .menu ul{
+  display: none;
 }
 nav ul li{
 display: inline-block;
@@ -107,8 +111,10 @@ display: inline-block;
   margin-top: 3rem;
 }
 .gadget img{
+/*  scale-down: contain;*/
   height: 9rem;
-  padding: 2rem;
+margin:2rem;
+max-width: 100% ;
 }
 .gadget h4{
   display: inline-block;
@@ -159,4 +165,79 @@ footer .width{
   display:flex;
   justify-content: flex-start;
   align-items: center;
+}
+/*media queries*/
+@media only screen and (max-width:1024px) {
+  nav .width .categories ul{
+    display: none;
+  }
+  nav .width .menu ul{
+    display: flex;
+    justify-content: center;
+  }
+.gadget{
+ width:47%;
+  }
+.hide-tablet{
+  display:none;
+  }
+}
+@media only screen and (max-width:450px) {
+  header .width{
+    display:flex;
+    justify-content: center;
+  }
+  .company{
+    display: none;
+  }
+.MainBanner-container{
+  height:15rem;
+  width: 100%;
+}
+  .box{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin-top: 10rem;
+    margin-right: 0;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 1.5rem;
+  }
+  .box h3{
+    margin-bottom:.5rem;
+    font-size:0.77rem;
+    font-weight:bold;
+  }
+  .box h1{
+    font-size:1rem;
+    font-weight:bold;
+    margin-bottom: 0;
+  }
+  .product-grid .width{
+    display: flex;
+    justify-content: center;
+  }
+  .gadget{
+   width:90%;
+    }
+  .hide-mobile{
+    display:none;
+  }
+  .contact-container .width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .contact{
+
+    margin-bottom: 0.5rem;
+    width:90%;
+  }
+  footer .width{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
